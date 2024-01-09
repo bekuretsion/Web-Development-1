@@ -1,0 +1,250 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	/* background: url(cont.png) no-repeat center center fixed;  */
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #efefef;
+}
+
+body{	 
+    text-align: center;
+	
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+
+header, footer{
+    box-sizing: border-box;
+	text-align: center;
+    width: 100%;
+    padding: 25px 40px;
+    background-color: #673AB7;
+    overflow: hidden;
+}
+
+
+header h1{
+    float: left;
+	font: normal 24px/1.5 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+header a{
+    color:#fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color:#F05283;
+
+}
+ul.nav{
+
+     border-bottom: 1px solid #EAEAEA; 
+     background-color: #FFF;
+}
+
+ul.nav a{
+    background-color: #BCB8C2;
+    padding: 10px 16px;   
+}
+
+ul {
+    list-style: none;
+   
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+ul a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: left;
+    
+    padding: 0px 16px;
+    border-radius: 2px;
+    opacity: 0.8;
+    font-size: 16px;
+    display: inline-block;
+    margin: 4px;
+    line-height: 1;
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+ul li a.active{
+    background-color: #F05283;
+    pointer-events: none;
+}
+
+ul li a:hover {
+    opacity: 1;
+}
+
+
+ul li{
+    display: inline-block;
+    
+}
+
+
+@media (max-width: 1000px) {
+
+
+    header h1{
+        float: none;
+    }
+
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+
+}
+
+.content{
+    margin-bottom: 75px;
+    
+}
+
+
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Content */
+.info {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 0.3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
+  opacity: 1;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+footer{
+    height: 100px;
+}
+footer h1{
+    color: #EAEAEA;
+}
+footer ul{
+    margin-top: 0;
+    background-color: none;
+}
+
+footer ul li{
+    display: inline-block;
+}
+footer ul li a{
+    width:70px;
+    height:70px;
+    background-color: none;
+}
+
+footer img{
+    max-width: 100%;
+}
